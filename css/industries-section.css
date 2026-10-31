@@ -1,0 +1,464 @@
+/* ==========================================================================
+   JADELIGHT — SIGNATURE ATELIER STRIP (LUXURY EDITORIAL WHITE)
+   Crafted under 'impeccable' & 'design-taste-frontend' Directives:
+   - Zero AI cliches: No cookie-cutter cards, no harsh gradient slop, no generic borders.
+   - White Editorial Canvas: Pure bespoke styling on crisp luxury white (#ffffff).
+   - Brand Palette: Deep Jade Pine (#063f2c), Emerald Aura (#009a6f), Imperial Gold (#a57e36), Deep Charcoal (#121715).
+   - Minimal Content Requirement: Strict Icon + Sector Title only.
+   - Robust Cascading: Fully isolated against any inherited layout issues.
+   ========================================================================== */
+
+#industries.industries-section,
+.industries-section {
+    position: relative !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: clamp(100px, 10vw, 160px) 0 clamp(90px, 8vw, 130px) !important;
+    background-color: #ffffff !important;
+    background-image: none !important;
+    color: #121715 !important;
+    border-top: 1px solid #eae7de !important;
+    border-bottom: 1px solid #eae7de !important;
+    box-sizing: border-box !important;
+    isolation: isolate !important;
+    display: block !important;
+    overflow: hidden !important;
+}
+
+.ind-atelier-container {
+    width: 90% !important;
+    max-width: 1320px !important;
+    margin: 0 auto !important;
+    box-sizing: border-box !important;
+    position: relative !important;
+}
+
+/* ==========================================================================
+   HEADER BLOCK
+   ========================================================================== */
+.ind-atelier-header {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr) !important;
+    gap: clamp(40px, 6vw, 80px) !important;
+    align-items: flex-end !important;
+    padding-bottom: clamp(40px, 4.5vw, 60px) !important;
+    margin-bottom: 0 !important;
+    box-sizing: border-box !important;
+    position: relative !important;
+}
+
+.ind-atelier-title-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.ind-atelier-title {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: 'poppins';
+    font-size: 100px;
+    font-weight: 600 !important;
+    line-height: 1.06 !important;
+    letter-spacing: -0.035em !important;
+    color: #121715 !important;
+}
+
+.ind-atelier-title span{
+    color: #009a6f;
+    font-family: 'yellowtail';
+    display: block;
+    letter-spacing: 2px;
+}
+
+.ind-atelier-action-group {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.ind-atelier-lede {
+    margin: 0 !important;
+    font-family: "Poppins", sans-serif !important;
+    font-size: clamp(14.5px, 1.1vw, 16px) !important;
+    font-weight: 400 !important;
+    line-height: 1.75 !important;
+    color: #555d59 !important;
+    max-width: 520px;
+}
+
+.ind-atelier-viewall {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 14px !important;
+    font-family: "Barlow", sans-serif !important;
+    font-size: 13.5px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.14em !important;
+    text-transform: uppercase !important;
+    color: black;
+    text-decoration: none !important;
+    width: fit-content !important;
+    background-color: #a57e36;
+    padding: 10px 15px;
+    border-radius: 99px;
+    transition: 0.25s;
+}
+
+.ind-atelier-arrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #f4f1e8;
+    color: #063f2c;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1;
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.ind-atelier-viewall:hover {
+    background-color: #009a6f;
+    box-shadow: 0px 8px 20px #009a6f;
+}
+
+.ind-atelier-viewall:hover .ind-atelier-arrow {
+    background: black;
+    color: #ffffff;
+    transform: translateX(6px);
+}
+
+/* ==========================================================================
+   ATELIER EDITORIAL ROWS (BESPOKE ICON + TITLE ARCHITECTURE)
+   ========================================================================== */
+.ind-atelier-list {
+    display: flex !important;
+    flex-direction: column !important;
+    position: relative !important;
+}
+
+.ind-atelier-row {
+    position: relative !important;
+    display: grid !important;
+    grid-template-columns:  70px 1fr auto !important;
+    align-items: center !important;
+    gap: 28px !important;
+    padding: clamp(24px, 2.6vw, 34px) 24px !important;
+    border-bottom: 1px solid #eae6dc !important;
+    text-decoration: none !important;
+    color: #121715 !important;
+    background-color: #ffffff !important;
+    box-sizing: border-box !important;
+    opacity: 1 !important;
+    /* Safety fallback ensures rows are always visible */
+    transition: background-color 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+        padding-left 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+        border-color 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    cursor: pointer !important;
+}
+
+/* Left Indicator Bar on Hover */
+.ind-atelier-row::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    background: #009a6f;
+    transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Index */
+.ind-row-index {
+    font-family: "Barlow", sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.16em !important;
+    color: #9aa19d !important;
+    line-height: 1 !important;
+    transition: color 0.3s ease, transform 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+/* Icon Glyph: Perfectly Centered FontAwesome Container */
+.ind-row-glyph {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 48px !important;
+    height: 48px !important;
+    border-radius: 50% !important;
+    background: #f7f5ed !important;
+    color: black !important;
+    font-size: 19px !important;
+    line-height: 1 !important;
+    flex-shrink: 0 !important;
+    box-sizing: border-box !important;
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.ind-row-glyph i {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    line-height: 1 !important;
+}
+
+/* Sector Title */
+.ind-row-main {
+    display: flex !important;
+    align-items: center !important;
+    min-width: 0 !important;
+}
+
+.ind-row-name {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: 'poppins';
+    font-size: 1.3rem !important;
+    font-weight: 500 !important;
+    letter-spacing: -0.025em !important;
+    line-height: 1.2 !important;
+    color: #121715 !important;
+    white-space: normal !important;
+    word-break: normal !important;
+    transition: color 0.3s ease, transform 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+/* Row Action & Arrow */
+.ind-row-end {
+    display: flex !important;
+    align-items: center !important;
+    gap: 16px !important;
+    flex-shrink: 0 !important;
+}
+
+.ind-row-explore {
+    font-family: 'poppins' !important;
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.18em !important;
+    text-transform: uppercase !important;
+    color: black !important;
+    opacity: 0 !important;
+    transform: translateX(-12px) !important;
+    pointer-events: none !important;
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.ind-row-cta {
+    font-family: "Barlow", sans-serif !important;
+    font-size: 22px !important;
+    font-weight: 400 !important;
+    line-height: 1 !important;
+    color: #b2b8b4 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+/* ==========================================================================
+   ROW HOVER STATE (PRESTIGE EDITORIAL EXPANSION)
+   ========================================================================== */
+.ind-atelier-row:hover {
+    background-color: #faf8f2 !important;
+    padding-left: 36px !important;
+}
+
+.ind-atelier-row:hover::before {
+    width: 4px !important;
+}
+
+.ind-atelier-row:hover .ind-row-index {
+    color: #a57e36 !important;
+    transform: translateX(4px) !important;
+}
+
+.ind-atelier-row:hover .ind-row-glyph {
+    background-color: #009a6f !important;
+    color: #ffffff !important;
+    transform: scale(1.12) !important;
+    box-shadow: 0 8px 24px rgba(6, 63, 44, 0.16) !important;
+}
+
+.ind-atelier-row:hover .ind-row-name {
+    color: #063f2c !important;
+    transform: translateX(6px) !important;
+}
+
+.ind-atelier-row:hover .ind-row-explore {
+    opacity: 1 !important;
+    transform: translateX(0) !important;
+}
+
+.ind-atelier-row:hover .ind-row-cta {
+    color: #009a6f !important;
+    transform: translate(4px, -4px) !important;
+}
+
+/* ==========================================================================
+   FOOTER STRIP
+   ========================================================================== */
+.ind-atelier-footer {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding-top: 38px !important;
+    gap: 30px !important;
+    flex-wrap: wrap !important;
+    box-sizing: border-box !important;
+}
+
+.ind-footer-note {
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    font-family: "Poppins", sans-serif !important;
+    font-size: 13.5px !important;
+    line-height: 1.6 !important;
+    color: #6d7570 !important;
+    max-width: 720px !important;
+}
+
+.ind-footer-bullet {
+    color: #a57e36 !important;
+    font-size: 11px !important;
+    flex-shrink: 0 !important;
+}
+
+.ind-footer-consult {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    font-family: "Barlow", sans-serif !important;
+    font-size: 13.5px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.12em !important;
+    text-transform: uppercase !important;
+    color: #063f2c !important;
+    text-decoration: none !important;
+    white-space: nowrap !important;
+    transition: color 0.25s ease !important;
+}
+
+.ind-footer-arrow {
+    display: inline-block !important;
+    transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.ind-footer-consult:hover {
+    color: #a57e36 !important;
+}
+
+.ind-footer-consult:hover .ind-footer-arrow {
+    transform: translateX(5px) !important;
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN BREAKPOINTS
+   ========================================================================== */
+@media (max-width: 1024px) {
+    .ind-atelier-header {
+        grid-template-columns: 1fr !important;
+        gap: 28px !important;
+    }
+
+    .ind-atelier-row {
+        grid-template-columns: 60px 58px 1fr auto !important;
+        gap: 20px !important;
+        padding: 24px 18px !important;
+    }
+
+    .ind-atelier-row:hover {
+        padding-left: 26px !important;
+    }
+
+    .ind-row-explore {
+        display: none !important;
+    }
+}
+
+@media (max-width: 768px) {
+
+    #industries.industries-section,
+    .industries-section {
+        padding: 80px 0 65px !important;
+    }
+
+    .ind-atelier-container {
+        width: 92% !important;
+    }
+
+    .ind-atelier-title {
+        font-size: 65px !important;
+    }
+
+    .ind-atelier-row {
+        grid-template-columns: 46px 50px 1fr auto !important;
+        gap: 16px !important;
+        padding: 20px 14px !important;
+    }
+
+    .ind-row-glyph {
+        width: 42px !important;
+        height: 42px !important;
+        font-size: 16px !important;
+    }
+
+    .ind-row-name {
+        font-size: clamp(19px, 4vw, 24px) !important;
+    }
+}
+
+@media (max-width: 540px) {
+
+    #industries.industries-section,
+    .industries-section {
+        padding: 45px 0 40px !important;
+    }
+
+    .ind-atelier-header {
+        padding-bottom: 32px !important;
+        border-bottom-width: 1.5px !important;
+    }
+
+    .ind-atelier-row {
+    grid-template-columns:  50px 1fr auto !important;
+        gap: 12px !important;
+        padding: 18px 10px !important;
+    }
+
+    .ind-atelier-row:hover {
+        padding-left: 14px !important;
+    }
+
+    .ind-row-index {
+        font-size: 12px !important;
+    }
+
+    .ind-row-glyph {
+        width: 38px !important;
+        height: 38px !important;
+        font-size: 15px !important;
+    }
+
+    .ind-row-name {
+        font-size: 17.5px !important;
+        line-height: 1.25 !important;
+    }
+
+    .ind-row-cta {
+        font-size: 18px !important;
+    }
+
+    .ind-atelier-footer {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 20px !important;
+        padding-top: 28px !important;
+    }
+}

@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="./assets/logo/favicon.webp" />
+
+
+  <title>Industries — Jade Light Sdn. Bhd.</title>
+    <link rel="canonical" href="https://jadelight.com.my/industries">
+  <link rel="stylesheet" href="./css/general.css">
+
+  <!-- About CSS -->
+  <link rel="stylesheet" href="./css/about.css">
+
+  <link rel="stylesheet" href="./css/home.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=Caveat:wght@600;700&family=Yellowtail&display=swap"
+    rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lucide@latest" defer></script>
+  <script src="script-jl.js" defer></script>
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar">
+
+      <!-- Logo -->
+      <a href="/" class="nav-logo1">
+        <img src="./assets/logo/favicon.webp" alt="">
+      </a>
+
+      <!-- Desktop Links -->
+      <div class="nav-links">
+
+        <a href="/" class="active">Home</a>
+        <a href="/about">About</a>
+        <a href="/solutions">Solutions</a>
+        <a href="/industries" class="active">Industries</a>
+        <a href="/contact">Contact</a>
+
+      </div>
+
+      <!-- Desktop CTA -->
+      <div class="btn1">
+        <a href="/contact" class="cta-btn1">
+          Request a Consultation
+          <span class="right-arrow">→</span>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger -->
+      <button class="hamburger" type="button" aria-label="Open menu" aria-expanded="false">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+      </button>
+
+    </nav>
+
+  </header>
+
+  <!-- ============ INDUSTRIES PAGE ============ -->
+  <main id="page-industries" class="page active">
+
+    <section class="industries-mega-hero" id="industriesMegaHero">
+
+      <div class="mega-hero-bg">
+        <img src="images/industries-hero.webp" alt="Jade Light guardian overlooking a coastal industrial landscape">
+        <div class="mega-hero-overlay"></div>
+      </div>
+
+      <div class="mega-hero-inner">
+        <div class="mega-hero-text">
+          <div class="eyebrow mega-eyebrow section-label-script">INDUSTRIES</div>
+          <h1 class="mega-title">Solutions Shaped Around <br><span class="touch-word">Your Industry</span></h1>
+          <p class="lede mega-lede">Every industry operates within a different combination of risks, responsibilities,
+            regulations and operational pressures. Jade Light brings together relevant expertise and services to support
+            each environment with clarity and purpose.</p>
+          <button class="btn-primary mega-cta"
+            onclick="document.querySelector('.industry-grid').scrollIntoView({behavior:'smooth'})">Explore Our
+            Industries <span class="cta-arrow">→</span></button>
+        </div>
+
+        <div class="mini-industry-grid">
+          <a class="mini-card" href="#ind-01"><span class="mini-icon"><i data-lucide="landmark"></i></span><span
+              class="mini-label">Government &amp; Public Sector</span><span class="mini-arrow">→</span></a>
+          <a class="mini-card" href="#ind-02"><span class="mini-icon"><i data-lucide="briefcase"></i></span><span
+              class="mini-label">Corporate, Financial &amp; Professional Services</span><span
+              class="mini-arrow">→</span></a>
+          <a class="mini-card" href="#ind-03"><span class="mini-icon"><i data-lucide="heart-pulse"></i></span><span
+              class="mini-label">Healthcare &amp; Medical Facilities</span><span class="mini-arrow">→</span></a>
+          <a class="mini-card" href="#ind-04"><span class="mini-icon"><i data-lucide="flask-conical"></i></span><span
+              class="mini-label">Pharmaceuticals &amp; Life Sciences</span><span class="mini-arrow">→</span></a>
+          <a class="mini-card" href="#ind-05"><span class="mini-icon"><i data-lucide="factory"></i></span><span
+              class="mini-label">Manufacturing &amp; Industrial</span><span class="mini-arrow">→</span></a>
+          <a class="mini-card" href="#ind-06"><span class="mini-icon"><i data-lucide="truck"></i></span><span
+              class="mini-label">Logistics, Warehousing &amp; Transportation</span><span class="mini-arrow">→</span></a>
+          <a class="mini-card" href="#ind-07"><span class="mini-icon"><i data-lucide="construction"></i></span><span
+              class="mini-label">Construction, Infrastructure &amp; Energy</span><span class="mini-arrow">→</span></a>
+          <a class="mini-card" href="#ind-08"><span class="mini-icon"><i data-lucide="building-2"></i></span><span
+              class="mini-label">Property, Retail &amp; Hospitality</span><span class="mini-arrow">→</span></a>
+          <a class="mini-card" href="#ind-09"><span class="mini-icon"><i data-lucide="cpu"></i></span><span
+              class="mini-label">Technology, Data Centres &amp; Telecommunications</span><span
+              class="mini-arrow">→</span></a>
+          <a class="mini-card" href="#ind-10"><span class="mini-icon"><i data-lucide="car"></i></span><span
+              class="mini-label">Transportation, Automotive, Maritime &amp; Aviation</span><span
+              class="mini-arrow">→</span></a>
+          <a class="mini-card" href="#ind-11"><span class="mini-icon"><i data-lucide="graduation-cap"></i></span><span
+              class="mini-label">Education &amp; Training</span><span class="mini-arrow">→</span></a>
+          <a class="mini-card" href="#ind-12"><span class="mini-icon"><i data-lucide="leaf"></i></span><span
+              class="mini-label">ESG &amp; Sustainability Initiatives</span><span class="mini-arrow">→</span></a>
+        </div>
+
+        <div class="mega-hero-footer">
+          <span class="footer-rule"></span>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="industry-grid">
+
+      <article class="industry-card">
+        <div class="card-header">
+          <div class="card-icon-badge"><i data-lucide="landmark"></i></div>
+          <span class="card-ghost-num">01</span>
+        </div>
+
+        <div class="card-content">
+          <h3>Government &amp; Public Sector</h3>
+          <div class="accent-line"></div>
+          <p>
+            Integrated support for government agencies, government-linked
+            companies, public facilities and public programmes across security,
+            intelligent systems, fire safety, facilities, logistics, liaison and
+            sustainability initiatives.
+          </p>
+        </div>
+      </article>
+
+
+      <article class="industry-card">
+        <div class="card-header">
+          <div class="card-icon-badge"><i data-lucide="briefcase"></i></div>
+          <span class="card-ghost-num">02</span>
+        </div>
+
+        <div class="card-content">
+          <h3>Corporate, Financial &amp; Professional Services</h3>
+          <div class="accent-line"></div>
+          <p>
+            Security, investigation, due-diligence, fraud-support and confidential
+            documentation solutions for corporations, banking and financial
+            services, insurers, claims teams, legal firms, HR functions,
+            professional services, audit, compliance and risk teams.
+          </p>
+        </div>
+      </article>
+
+
+      <article class="industry-card">
+        <div class="card-header">
+          <div class="card-icon-badge"><i data-lucide="heart-pulse"></i></div>
+          <span class="card-ghost-num">03</span>
+        </div>
+
+        <div class="card-content">
+          <h3>Healthcare &amp; Medical Facilities</h3>
+          <div class="accent-line"></div>
+          <p>
+            Security assessment, restricted-area protection, surveillance,
+            access management, incident support, internal investigation and
+            confidential documentation services for hospitals, clinics, medical
+            centres, diagnostic facilities and healthcare groups.
+          </p>
+        </div>
+      </article>
+
+
+      <article class="industry-card">
+        <div class="card-header">
+          <div class="card-icon-badge"><i data-lucide="flask-conical"></i></div>
+          <span class="card-ghost-num">04</span>
+        </div>
+
+        <div class="card-content">
+          <h3>Pharmaceuticals &amp; Life Sciences</h3>
+          <div class="accent-line"></div>
+          <p>
+            Integrated protection and operational support for pharmaceutical
+            manufacturers and distributors, laboratories, biotechnology
+            organisations, medical-device companies, research facilities and
+            healthcare supply chains.
+          </p>
+        </div>
+      </article>
+
+
+      <article class="industry-card">
+        <div class="card-header">
+          <div class="card-icon-badge"><i data-lucide="factory"></i></div>
+          <span class="card-ghost-num">05</span>
+        </div>
+
+        <div class="card-content">
+          <h3>Manufacturing &amp; Industrial</h3>
+          <div class="accent-line"></div>
+          <p>
+            Security, investigation, asset protection, perimeter monitoring,
+            access control, fire safety, facility maintenance and operational
+            support for factories, plants and industrial environments.
+          </p>
+        </div>
+      </article>
+
+
+      <article class="industry-card">
+        <div class="card-header">
+          <div class="card-icon-badge"><i data-lucide="truck"></i></div>
+          <span class="card-ghost-num">06</span>
+        </div>
+
+        <div class="card-content">
+          <h3>Warehousing, Logistics &amp; Distribution</h3>
+          <div class="accent-line"></div>
+          <p>
+            Solutions for warehouse security, cargo and inventory concerns,
+            loading-bay monitoring, access management, logistics coordination,
+            transportation, incident investigation and documentation.
+          </p>
+        </div>
+      </article>
+
+
+      <article class="industry-card">
+        <div class="card-header">
+          <div class="card-icon-badge"><i data-lucide="construction"></i></div>
+          <span class="card-ghost-num">07</span>
+        </div>
+
+        <div class="card-content">
+          <h3>Construction, Infrastructure &amp; Energy</h3>
+          <div class="accent-line"></div>
+          <p>
+            Site security, contractor verification, surveillance, fire protection,
+            construction support, maintenance and facilities services for
+            construction, infrastructure, oil, gas, energy, petrochemical and
+            utility environments.
+          </p>
+        </div>
+      </article>
+
+
+      <article class="industry-card">
+        <div class="card-header">
+          <div class="card-icon-badge"><i data-lucide="building-2"></i></div>
+          <span class="card-ghost-num">08</span>
+        </div>
+
+        <div class="card-content">
+          <h3>Property, Retail &amp; Hospitality</h3>
+          <div class="accent-line"></div>
+          <p>
+            Integrated security, access control, surveillance, loss prevention,
+            incident support, maintenance and facilities management for property
+            portfolios, commercial buildings, retail environments, shopping
+            centres, hotels and hospitality operations.
+          </p>
+        </div>
+      </article>
+
+
+      <article class="industry-card">
+        <div class="card-header">
+          <div class="card-icon-badge"><i data-lucide="cpu"></i></div>
+          <span class="card-ghost-num">09</span>
+        </div>
+
+        <div class="card-content">
+          <h3>Technology, Data Centres &amp; Telecommunications</h3>
+          <div class="accent-line"></div>
+          <p>
+            Physical security, restricted-zone access, surveillance, insider-risk
+            support, contractor verification, intelligent systems, fire detection
+            and facility protection for technology operations and critical digital
+            infrastructure.
+          </p>
+        </div>
+      </article>
+
+
+      <article class="industry-card">
+        <div class="card-header">
+          <div class="card-icon-badge"><i data-lucide="car"></i></div>
+          <span class="card-ghost-num">10</span>
+        </div>
+
+        <div class="card-content">
+          <h3>Transportation, Automotive, Maritime &amp; Aviation</h3>
+          <div class="accent-line"></div>
+          <p>
+            Security, investigation, asset protection, access management,
+            logistics coordination, transportation support and incident
+            documentation for automotive, fleet, trucking, maritime, port and
+            aviation-related operations.
+          </p>
+        </div>
+      </article>
+
+
+      <article class="industry-card">
+        <div class="card-header">
+          <div class="card-icon-badge"><i data-lucide="graduation-cap"></i></div>
+          <span class="card-ghost-num">11</span>
+        </div>
+
+        <div class="card-content">
+          <h3>Education &amp; Training</h3>
+          <div class="accent-line"></div>
+          <p>
+            Security systems, access management, incident support,
+            background-verification support, fire safety, facilities management
+            and ESG awareness for schools, colleges, universities and training
+            organisations.
+          </p>
+        </div>
+      </article>
+    </div>
+
+    <section class="final-cta-banner" id="final-cta">
+
+      <div class="banner-glow"></div>
+      <div class="banner-grain"></div>
+
+      <div class="banner-inner">
+
+        <div class="banner-text">
+
+          <div class="banner-eyebrow">
+            <span class="banner-eyebrow-line"></span>
+            <span>FINAL CALL TO ACTION</span>
+          </div>
+
+          <h2>
+            Let us build a
+            <span class="banner-script">safer, stronger</span>
+            tomorrow
+          </h2>
+
+          <p>
+            Confidential investigations, stronger security, intelligent
+            systems and reliable operations — ready when you are.
+          </p>
+
+          <a href="/contact" class="banner-cta">
+            <span>Speak With Jade Light</span>
+            <span class="banner-arrow">→</span>
+          </a>
+
+        </div>
+
+        <div class="banner-character">
+          <div class="banner-character-glow"></div>
+          <img src="./images/stone.webp" alt="Jade Light Guardian">
+        </div>
+
+      </div>
+
+      <div class="banner-strip">
+        <span>SECURITY</span>
+        <span class="dot"></span>
+        <span>INTELLIGENCE</span>
+        <span class="dot"></span>
+        <span>TECHNOLOGY</span>
+        <span class="dot"></span>
+        <span>SUSTAINABILITY</span>
+        <span class="dot"></span>
+        <span>GROWTH</span>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer>
+        <div class="footer-top">
+            <div class="footer-brand">
+                <div class="brand"><img src="./assets/logo/Jadelight vertical.webp" alt=""></div>
+                <p>People. Solutions. A Safer, Sustainable Tomorrow.</p>
+            </div>
+
+            <div>
+                <h4 style="color: #009a6f;">QUICK LINKS</h4>
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <a href="/solutions">Solutions</a>
+                <a href="/industries">Industries</a>
+                <a href="/contact">Contact</a>
+            </div>
+
+
+            <div>
+                <h4>REGIONAL PRESENCE</h4>
+                <a>Malaysia · Singapore · Indonesia</a>
+                <a>Thailand · India</a>
+                <a>UAE · Saudi Arabia</a>
+            </div>
+            <div>
+                <h4>CONTACT</h4>
+          
+                <a href="mailto:admin@jadelight.com.my">
+                    <i data-lucide="mail"></i>
+                    <span>admin@jadelight.com.my</span>
+                </a>
+
+            </div>
+        </div>
+        <div class="brand-name">
+            JADELIGHT
+        </div>
+        <div class="copyright">
+            <span>Copyright © Jade Light Sdn. Bhd. All rights reserved.</span>
+            <span>Privacy Policy &amp; Terms of Use</span>
+            <span class="built-by">
+                Built by
+                <a href="https://os2studio.com" target="_blank" rel="noopener noreferrer" style="color: #009a6f;">OS2 Studio</a>
+            </span>
+        </div>
+
+    </footer>
+
+
+  <script>
+    // This page loads standalone, so trigger the industries-specific
+    // animations/init that script.js normally wires up via showPage().
+    document.addEventListener('DOMContentLoaded', function () {
+      if (typeof initPage === 'function') {
+        initPage('industries');
+      }
+      if (window.lucide) {
+        lucide.createIcons();
+      }
+    });
+  </script>
+
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
